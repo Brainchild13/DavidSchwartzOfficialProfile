@@ -8,26 +8,22 @@ const userSchema = new Schema({
     },
     email: {
         type: String,
-        required: true
+        required: true,
+        // unique: true,
     },
     password: {
         type: String,
         required: true
     },
-    isAdmin: {
-        type: Boolean,
-        required: true,
-        default: false
+    role: {
+        type: String,
+        enum: ['admin', 'user'],
+        default: 'user',
     },
     isActive: {
         type: Boolean,
         required: true,
         default: true
-    },
-    isDeleted: {
-        type: Boolean,
-        required: true,
-        default: false
     },
     createdAt: {
         type: Date,

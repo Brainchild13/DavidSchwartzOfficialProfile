@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 const colors = require('colors')
 
 // Database
@@ -17,6 +17,8 @@ app.use(cors())
 // Routes
 
 app.use('/users', require('./routes/userRoutes.js'))
+app.use('/categories', require('./routes/categoryRoutes.js'))
+
 
 app.get('/', (req, res) => {
     console.log('\n\tHome Page\n'.white)
