@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "title1",
+        "featuredImage": "https://placehold.co/286x180",
+        "content": "lorem*23",
+        "published": true,
+        "author": "John David"
+    },
+    {
+        "id": 2,
+        "title": "title2",
+        "featuredImage": "https://placehold.co/286x180",
+        "content": "lorem*40",
+        "published": true,
+        "author": "Derrik James"
+    },
+    {
+        "id": 3,
+        "title": "title3",
+        "featuredImage": "https://placehold.co/286x180",
+        "content": "lorem*30",
+        "published": false,
+        "author": "Matt Jones"
+    }
+]
