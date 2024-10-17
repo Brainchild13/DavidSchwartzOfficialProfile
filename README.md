@@ -10,6 +10,8 @@ https://davidschwartz.biz is the official page for David Schwartz.
 - Dotenv
 
 ### To Run:
+touch .env
+- add Environment variables for PORT=5000 and MONGO_URI=MONGO_URI=mongodb://localhost:27017/daveofficial
 npm install
 npm start
 
